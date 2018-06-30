@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mensajes | JP</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="skin-2">
+
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                            <span>
+                            <img alt="image" class="img-circle" src="img/perfil.jpg">
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">José Paredes</strong>
+                             </span> <span class="text-muted text-xs block">Desarrollador <b class="caret"></b></span> </span> </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="configuracion.html">Configuraciones</a></li>
+                                <li><a href="mensajes.html">Mensajes</a></li>
+                                <li><a href="login.html">Salir</a></li>
+                            </ul>
+                    </div>
+                    <div class="logo-element">
+                        JP
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-tachometer"></i> <span class="nav-label">Pizarra</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-cubes"></i> <span class="nav-label">Inventario</span><span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">Entradas</a></li>
+                        <li><a href="#">Salidas<span class="label label-primary pull-right">5</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-truck"></i> <span class="nav-label">Proveedores</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-male"></i> <span class="nav-label">Clientes</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-steam"></i> <span class="nav-label">Ajustes</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    <form role="search" class="navbar-form-custom" method="post" action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="Busqueda global..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <span class="m-r-sm text-muted welcome-message">[Nombre de la Empresa]</span>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toogle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-envelope"></i> <span class="label label-warning">5</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a href="mensajes.html" class="pull-left">
+                                        <img alt="image" class="img-circle" src="img/mario.jpg">
+                                    </a>
+                                    <div class="media-body">
+                                        <small class="pull-right">Enviado hace 10min</small>
+                                        Ya casi termino el documento que define el modulo de inventario, lo estar&eacute; compartiendo... <br>
+                                        <small class="text-muted">Enviado a 7:58 pm - 25.08.2016</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a href="mensajes.html" class="pull-left">
+                                        <img alt="image" class="img-circle" src="img/alejandro.jpg">
+                                    </a>
+                                    <div class="media-body ">
+                                        <small class="pull-right text-navy">Hace 5horas</small>
+                                        Compart&iacute; información de la base de datos en google drive. <br>
+                                        <small class="text-muted">Enviado a 2:21 pm - 25.08.2016</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                             <li>
+                                <div class="text-center link-block">
+                                    <a href="mensajes.html">
+                                        <i class="fa fa-envelope"></i> <strong>Leer todos los mensajes</strong>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="mensajes.html">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> Tienes 5 mensajes
+                                        <span class="pull-right text-muted small">&Uacute;ltimo hace 10 min</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="gestion.html">
+                                    <div>
+                                        <i class="fa fa-hdd-o fa-fw"></i> HDD casi lleno
+                                        <span class="pull-right text-muted small">Hace 1 hora</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="notificaciones.html">
+                                        <strong>Todas las alertas</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> Salir
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>Navegaci&oacute;n</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a>Informaci&oacute;n</a>
+                        </li>
+                        <li class="active">
+                            <strong>Mensajes</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-2">
+                </div>
+            </div>
+        <div class="wrapper wrapper-content">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-content mailbox-content">
+                            <div class="file-manager">
+                                <a class="btn btn-block btn-primary compose-mail" href="redactar.html">Redactar Mensaje</a>
+                                <div class="space-25"></div>
+                                <h5>Carpetas</h5>
+                                <ul class="folder-list m-b-md" style="padding: 0">
+                                    <li><a href="mailbox.html"> <i class="fa fa-inbox "></i> Entrada <span class="label label-warning pull-right">5</span> </a></li>
+                                    <li><a href="mailbox.html"> <i class="fa fa-envelope-o"></i> Enviados</a></li>
+                                    <li><a href="mailbox.html"> <i class="fa fa-certificate"></i> Importantes</a></li>
+                                    <li><a href="mailbox.html"> <i class="fa fa-file-text-o"></i> Borrador <span class="label label-danger pull-right">2</span></a></li>
+                                    <li><a href="mailbox.html"> <i class="fa fa-trash-o"></i> Basura</a></li>
+                                </ul>
+                                <h5>Categorias</h5>
+                                <ul class="category-list" style="padding: 0">
+                                    <li><a href="#"> <i class="fa fa-circle text-navy"></i> Urgente </a></li>
+                                    <li><a href="#"> <i class="fa fa-circle text-danger"></i> Importante</a></li>
+                                    <li><a href="#"> <i class="fa fa-circle text-primary"></i> Aviso</a></li>
+                                    <li><a href="#"> <i class="fa fa-circle text-info"></i> Advertencia</a></li>
+                                    <li><a href="#"> <i class="fa fa-circle text-warning"></i> Otros</a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 animated fadeInRight">
+                    <div class="mail-box-header">
+                        <div class="pull-right tooltip-demo">
+                            <a href="mensajes.html" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Move to draft folder"><i class="fa fa-pencil"></i> Borrador</a>
+                            <a href="mensajes.html" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> Descartar</a>
+                        </div>
+                        <h2>
+                            Redactar Mensaje
+                        </h2>
+                    </div>
+                    <div class="mail-box">
+                        <div class="mail-body">
+
+                            <form class="form-horizontal" method="get">
+                                <div class="form-group"><label class="col-sm-2 control-label">Para:</label>
+
+                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="nombre usuario" value=""></div>
+                                </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Categoria:</label>
+
+                                    <div class="col-sm-10"><input type="text" class="form-control" value=""></div>
+                                </div>
+                                </form>
+
+                        </div>
+
+                            <div class="mail-text h-200">
+
+                                <div class="summernote">
+                                    <h3>Buenas tardes! </h3>
+                                    Este es un producto. <strong>Enfocado en la productividad del usuario</strong> para agilizar los procesos y tareas que se deben de ejecutar para realizar los registros y seguimiento de cada uno de los datos involucrados en el proceso.
+                                </div>
+        <div class="clearfix"></div>
+                                </div>
+                            <div class="mail-body text-right tooltip-demo">
+                                <a href="mensajes.html" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Send"><i class="fa fa-reply"></i> Enviar</a>
+                                <a href="mensajes.html" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> Descartar</a>
+                                <a href="mensajes.html" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Move to draft folder"><i class="fa fa-pencil"></i> Descartar</a>
+                            </div>
+                            <div class="clearfix"></div>
+                </div> 
+                </div>
+            </div>
+        </div>
+        <div class="footer fixed">
+            <div class="pull-right">
+                <strong>Aviso de seguridad</strong> Si usted encontro esta sesión abierta y no es suya, favor cerrar la ventana inmediatamente.
+            </div>
+            <div>
+                <strong>Copyright</strong> [Sin Nombre] &copy; 2015-2016
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
+ <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- SUMMERNOTE -->
+    <script src="js/plugins/summernote/summernote.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+
+
+            $('.summernote').summernote({
+                disableDragAndDrop:true,
+                toolbar:[
+                    ['style',['fontname','bold','italic','underline','clear']],
+                    ['fontsize',['fontsize']],
+                    ['color',['color']],
+                    ['format',['style']],
+                    ['para',['ul','ol','paragraph']],
+                    ['height',['height']],
+                    ['setup',['codeview','undo','redo']]
+                ]
+            });
+
+        });
+        var edit = function() {
+            $('.click2edit').summernote({focus: true});
+        };
+        var save = function() {
+            var aHTML = $('.click2edit').code(); //save HTML If you need(aHTML: array).
+            $('.click2edit').destroy();
+        };
+
+    </script>
+</body>
+
+</html>
