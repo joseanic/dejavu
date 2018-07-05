@@ -35,6 +35,13 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-
+composer.phar
+contributing.md
 # Directorios del proyecto que debe de ignorar #
 ################################################
+vendor/*
+user_guide/*
+test/*
+system/*
+license.txt
+readme.rst
